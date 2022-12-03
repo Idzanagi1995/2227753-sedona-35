@@ -1096,7 +1096,7 @@ img {
 }
 
 .modal-container-close {
-  display: none;
+  display: block;
 }
 
 .modal {
@@ -1331,26 +1331,34 @@ img {
   background-position: center;
 }
 
+.tooltip-text::before {
+  content: "";
+  width: 19px;
+  height: 9px;
+  position: absolute;
+  top: -9px;
+  left: 117px;
+  background-image: url("../images/modal/tooltip-pointer.svg");
+}
+
 .tooltip-text {
   display: none;
   box-sizing: border-box;
   position: absolute;
   left: -114px;
-  top: 32px;
+  top: 41px;
   width: 256px;
-  min-height: 152px;
-  padding-top: 30px;
-  padding-left: 22px;
-  padding-right: 18px;
-  padding-bottom: 18px;
+  min-height: 130px;
+  padding: 15px 18px 18px 22px;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
-  background-image: url("../images/modal/tooltip-background.png");
-  background-size: cover;
+  background-color: #333333;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
 }
 
 .tooltip:hover {
