@@ -1096,7 +1096,7 @@ img {
 }
 
 .modal-container-close {
-  display: block;
+  display: none;
 }
 
 .modal {
